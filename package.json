@@ -1,18 +1,20 @@
 {
-    "name": "ui-builder",
-    "description": "UI builder",
-    "license": "MIT",
-    "version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nextmotion/ui-builder.git"
-    },
-    "bugs": {
-        "url": "https://github.com/nextmotion/ui-builder/issues"
-    },
-    "dependencies": {
-        "bootstrap": "4.5.0",
-        "jquery": "^3.5.1",
-        "popper.js": "^1.16.1"
-    }
+  "name": "ui-builder",
+  "description": "UI builder",
+  "author": "next.motion OHG",
+  "license": "MIT",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nextmotion/ui-builder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextmotion/ui-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nextmotion/ui-builder/issues"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
