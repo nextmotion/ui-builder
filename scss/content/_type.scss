@@ -1,33 +1,3 @@
-// Typography
-//
-// Font, Paragraphs, Horizontal rules, and more.
-
-//Font Family
-$standard-font-name-1: inter-v1-latin-regular;
-$standard-font-name-2: inter-v1-latin-700;
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../../fonts/#{$standard-font-name-1}.eot');
-  src: url('../../fonts/#{$standard-font-name-1}.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/#{$standard-font-name-1}.woff2') format('woff2'),
-  url('../../fonts/#{$standard-font-name-1}.woff') format('woff'),
-  url('../../fonts/#{$standard-font-name-1}.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('../../fonts/#{$standard-font-name-2}.eot');
-  src: url('../../fonts/#{$standard-font-name-2}.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/#{$standard-font-name-2}.woff2') format('woff2'),
-  url('../../fonts/#{$standard-font-name-2}.woff') format('woff'),
-  url('../../fonts/#{$standard-font-name-2}.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-
 // Paragraphs
 p {
 

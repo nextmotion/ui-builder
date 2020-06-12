@@ -1,9 +1,0 @@
-@import '../../generated/sprites';
-
-.example {
-  // Using the included sprite() mixin
-  @include sprite('play', (), true);
-
-  // Using the SVG from the map directly
-  background-image: url(map-get($sprites, 'play'));
-}
