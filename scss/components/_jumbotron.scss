@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Jumbotron Base */
+@import '~bootstrap/scss/jumbotron';
+
+/* Component extensions */
+.jumbotron {
+
+  @include responsive-margin-bottom;
+}

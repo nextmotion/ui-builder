@@ -1,0 +1,10 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Input group Base */
+@import '~bootstrap/scss/input-group';
+
+/* Component extensions */
+.input-group {
+  margin-bottom: $form-group-margin-bottom;
+}

@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Alert Base */
+@import '~bootstrap/scss/alert';
+
+/* Component extensions */
+.alert {
+
+  @include responsive-margin-bottom;
+}

@@ -1,0 +1,8 @@
+// Responsive margin-bottom
+
+@mixin responsive-margin-bottom() {
+  margin-bottom: map-get($spacers, 2);
+  @include media-breakpoint-up(md) {
+    margin-bottom: map-get($spacers, 3);
+  }
+}

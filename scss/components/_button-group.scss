@@ -1,0 +1,12 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Button group Base */
+@import '~bootstrap/scss/button-group';
+
+/* Component extensions */
+.btn-group,
+.btn-group-vertical {
+
+  @include responsive-margin-bottom;
+}

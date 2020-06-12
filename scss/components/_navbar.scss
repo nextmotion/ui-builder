@@ -1,0 +1,42 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Navbar Base */
+@import '~bootstrap/scss/navbar';
+
+/* Component extensions */
+.navbar {
+
+  @include responsive-margin-bottom;
+}
+
+.navbar-nav {
+
+  .dropdown-menu {
+    margin-top: $dropdown-spacer;
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+
+      @include media-breakpoint-up($next) {
+
+        .navbar-nav {
+
+          .dropdown-menu {
+            margin-top: $dropdown-spacer * 4;
+            opacity: 0;
+            animation: slide-up 0.2s ease-out forwards;
+          }
+        }
+      }
+    }
+  }
+}

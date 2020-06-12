@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Carousel Base */
+@import '~bootstrap/scss/carousel';
+
+/* Component extensions */
+.carousel {
+
+  @include responsive-margin-bottom;
+}

@@ -1,0 +1,99 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Card Base */
+@import '~bootstrap/scss/card';
+
+/* Component extensions */
+[class*="card-holder"] {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+
+  @include responsive-margin-bottom();
+
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  flex-grow: 1;
+
+  @include responsive-margin-bottom;
+}
+
+.card-footer-no-styling {
+  @extend .card-footer;
+  background: none;
+  border: 0;
+  padding-top: 0;
+}
+
+.card-teaser {
+  color: $card-teaser-color;
+  border-color: $card-teaser-border-color;
+
+  @include transition($card-teaser-transition);
+
+  @include media-detection-hover {
+    text-decoration: none;
+    color: $card-teaser-hover-color;
+    border-color: $card-teaser-hover-border-color;
+
+    @include box-shadow($card-teaser-hover-box-shadow);
+
+    .card-img-overlay-top,
+    .card-img-overlay-bottom {
+      color: $card-img-overlay-hover-color;
+    }
+  }
+}
+
+// Card image
+.card-img-overlay-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: $card-img-overlay-padding;
+  color: $card-img-overlay-color;
+}
+.card-img-overlay-bottom {
+  @extend .card-img-overlay-top;
+  top: auto;
+  bottom: 0;
+}
+
+// Card image BG
+.card-img-bg-content-top {
+  background-size: cover;
+  background-position: center center;
+  align-items: flex-start;
+  flex-direction: row;
+  .card-body {
+    color: $card-img-overlay-color;
+    padding-bottom: $card-spacer-y * 4;
+  }
+  @include hover-focus {
+    .card-body {
+      color: $card-img-overlay-hover-color;
+    }
+  }
+}
+.card-img-bg-content-bottom {
+  @extend .card-img-bg-content-top;
+  align-items: flex-end;
+  .card-body {
+    color: $card-img-overlay-color;
+    padding-bottom: $card-spacer-y;
+    padding-top: $card-spacer-y * 4;
+  }
+}
+
+.accordion {
+
+  .card {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,303 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$primary:       #663399;
+$secondary:     $pink;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-shadows:                              true;
+$enable-responsive-font-sizes:                true;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 2rem;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                $gray-900;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              theme-color("primary");
+$link-decoration:                         none;
+$link-hover-color:                        darken($link-color, 15%);
+$link-hover-decoration:                   underline;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15%;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 380px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xlg: 2000px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xxl: 1400px,
+  xlg: 2100px
+);
+
+$container-padding-xxl:       $spacer * 2.6;
+$container-padding-xl:        $spacer * 2;
+$container-padding-lg:        $spacer * 1.5;
+$container-padding-md:        $spacer;
+$container-padding-xs:        24px;
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width:           $spacer;
+$grid-border-color:           $gray-200;
+$grid-border-style:           solid;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.5;
+$line-height-sm:              1.3;
+$line-height-xs:              1.2;
+
+$border-width:                1px;
+$box-shadow-lg:               0 1rem 2rem rgba($black, .175);
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base-px:           16;
+$font-size-xs-px:             12;
+$font-size-sm-px:             14;
+$font-size-lg-px:             24;
+
+$font-size-base:              ($font-size-base-px / 16) * 1rem; //don´t touch!
+$font-size-lg:                ($font-size-lg-px / 16) * 1rem; //don´t touch!
+$font-size-sm:                ($font-size-sm-px / 16) * 1rem; //don´t touch!
+$font-size-xs:                ($font-size-xs-px / 16) * 1rem; //don´t touch!
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.4;
+
+$h1-font-size:                46px;
+$h2-font-size:                36px;
+$h3-font-size:                28px;
+$h4-font-size:                24px;
+$h5-font-size:                20px;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        null;
+$headings-font-weight:        $font-weight-bold;
+$headings-line-height:        1.2;
+$headings-color:              null;
+
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.5rem;
+
+$display1-weight:             300;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         $headings-line-height;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-600;
+
+$blockquote-small-color:      $gray-600;
+$blockquote-small-font-size:  $small-font-size;
+$blockquote-font-size:        $font-size-base * 1.25;
+
+$hr-border-color:             rgba($black, .1);
+$hr-border-width:             $border-width;
+
+$mark-padding:                .2em;
+
+$dt-font-weight:              $font-weight-bold;
+
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25);
+$nested-kbd-font-weight:      $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-bg:                     #fcf8e3;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .6rem;
+$input-btn-padding-x:         1rem;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              none;
+$btn-font-weight:             $font-weight-bold;
+
+// Forms
+
+$input-box-shadow:                      none;
+
+
+// Bootstrap Base Variables
+//
+// Needs to be imported after theming for correct overwrite
+@import '~bootstrap/scss/_variables';
+
+
+//
+// Extended Components and Utilities Variables
+//
+
+// Media
+$media-transition:               $transition-base;
+$media-hover-box-shadow:         $box-shadow-lg;
+$media-hover-border-color:       theme-color("primary");
+$media-play-button-bg:           theme-color("primary");
+$media-play-button-color:        $white;
+
+// Card
+$card-teaser-color:              $body-color;
+$card-teaser-hover-color:        theme-color("primary");
+$card-teaser-border-color:       rgba(theme-color("primary"), .2);
+$card-teaser-hover-border-color: theme-color("primary");
+$card-teaser-transition:         $transition-base;
+$card-teaser-hover-box-shadow:   $box-shadow-lg;
+$card-img-overlay-color:         $white;
+$card-img-overlay-hover-color:   $white;
+$card-img-overlay-padding:       1.25rem;
+
+// Sizes px for .mwpx-*` classes.
+$sizespx: (
+  100: 100px,
+  150: 150px,
+  200: 200px,
+  250: 250px,
+  300: 300px,
+  350: 350px,
+  400: 400px,
+  450: 450px,
+  500: 500px,
+  550: 550px,
+  600: 600px
+) !default;

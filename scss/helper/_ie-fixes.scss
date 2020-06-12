@@ -1,0 +1,8 @@
+//
+// Global Fixes for Internet Explorer :(
+//
+.is-ie {
+  img {
+    flex-shrink: 0;
+  }
+}

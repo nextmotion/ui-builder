@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Media Base */
+@import '~bootstrap/scss/media';
+
+/* Component extensions */
+.media {
+
+  @include responsive-margin-bottom;
+}

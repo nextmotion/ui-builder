@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap List group Base */
+@import '~bootstrap/scss/list-group';
+
+/* Component extensions */
+.list-group {
+
+  @include responsive-margin-bottom;
+}

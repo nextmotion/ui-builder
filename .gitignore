@@ -1,0 +1,10 @@
+*~
+._*
+.DS_Store
+
+# PhpStorm
+.idea
+atlassian-ide-plugin.xml
+
+# Project
+node_modules/

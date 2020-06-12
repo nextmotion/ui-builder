@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Nav Base */
+@import '~bootstrap/scss/nav';
+
+/* Component extensions */
+.nav {
+
+  @include responsive-margin-bottom;
+}

@@ -1,0 +1,11 @@
+/* Requirements: Functions, Variables, Mixins */
+@import "../requirements";
+
+/* Bootstrap Progress Base */
+@import '~bootstrap/scss/progress';
+
+/* Component extensions */
+.progress {
+
+  @include responsive-margin-bottom;
+}
