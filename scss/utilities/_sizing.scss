@@ -8,5 +8,11 @@
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
       }
     }
+
+    @each $prop, $abbrev in (width: wpx, height: hpx) {
+      @each $size, $length in $sizespx {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
   }
 }
