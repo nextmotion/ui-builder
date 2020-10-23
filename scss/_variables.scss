@@ -17,6 +17,14 @@ $font-faces: (
   )
 ) !default;
 
+//Container
+$container-padding-xlg:       $spacer * 4 !default;
+$container-padding-xxl:       $spacer * 2.6 !default;
+$container-padding-xl:        $spacer * 2 !default;
+$container-padding-lg:        $spacer * 1.5 !default;
+$container-padding-md:        $spacer !default;
+$container-padding-xs:        24px !default;
+
 // Media
 $media-transition:               $transition-base !default;
 $media-hover-box-shadow:         $box-shadow-lg !default;

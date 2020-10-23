@@ -28,6 +28,11 @@
     padding-right: $container-padding-xxl;
     padding-left: $container-padding-xxl;
   }
+
+  @include media-breakpoint-up(xlg) {
+    padding-right: $container-padding-xlg;
+    padding-left: $container-padding-xlg;
+  }
 }
 
 @mixin make-row($gutter: $grid-gutter-width) {
