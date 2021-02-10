@@ -1,5 +1,5 @@
 /* Base: Requirements, Type, Content, Helpers */
-@import "../requirements";
+@import "requirements";
 
 /* Bootstrap Base SCSS */
 @import '~bootstrap/scss/root';
@@ -9,10 +9,10 @@
 @import '~bootstrap/scss/utilities';
 
 /* Utilites */
-@import "../utilities/sizing";
+@import "utilities/sizing";
 
 /* Content */
-@import '../content/type';
+@import 'content/type';
 
 /* Helpers */
-@import '../helper/ie-fixes';
+@import 'helper/ie-fixes';

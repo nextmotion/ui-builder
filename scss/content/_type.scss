@@ -23,3 +23,9 @@ hr {
   font-size: $font-size-sm;
   line-height: $line-height-sm;
 }
+
+@each $color, $value in $gray-colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
