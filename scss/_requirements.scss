@@ -9,7 +9,7 @@
 @import '~bootstrap/scss/mixins';
 
 /* Mixin Overwrites & Extensions */
-@import '/mixins/grid-framework';
-@import '/mixins/grid';
-@import '/mixins/media-detection';
-@import '/mixins/responsive-margin-bottom';
+@import 'mixins/grid-framework';
+@import 'mixins/grid';
+@import 'mixins/media-detection';
+@import 'mixins/responsive-margin-bottom';
