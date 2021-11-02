@@ -3,7 +3,7 @@
   "description": "UI builder",
   "author": "next.motion OHG",
   "license": "MIT",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "homepage": "https://github.com/nextmotion/ui-builder#readme",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "url": "https://github.com/nextmotion/ui-builder/issues"
   },
   "dependencies": {
-    "bootstrap": "4.5.0",
+    "bootstrap": "^4.6.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
