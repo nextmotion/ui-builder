@@ -1,4 +1,6 @@
 /* Requirements: Functions, Variables, Mixins */
+@use "sass:math";
+
 @import "../requirements";
 
 /* Bootstrap Images Base */
@@ -25,7 +27,7 @@
 }
 
 .figure-caption {
-  padding-top: ($spacer / 3);
+  padding-top: math.div($spacer, 3);
 }
 
 .figure-copyright {

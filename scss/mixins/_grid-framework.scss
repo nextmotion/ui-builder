@@ -62,7 +62,7 @@
         &:before {
           content: "";
           position: absolute;
-          right: -($gutter / 2);
+          right: -($gutter * 0.5);
           top: 0;
           bottom: 0;
           width: 0;
@@ -79,7 +79,7 @@
           > [class*="col-"] {
             padding-left: $length;
             &:before {
-              right: -($length / 2);
+              right: -($length * 0.5);
             }
           }
         }
